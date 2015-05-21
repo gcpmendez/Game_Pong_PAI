@@ -168,6 +168,8 @@ public class PongJPanel extends JPanel {
 			g.setColor(Color.WHITE);
 			g.setFont(new Font("Cantarell", 1, 70));
 			g.drawString("Player " + playerWon + " Wins!", this.getWidth()/2 - 250, 350);
+			g.setFont(new Font("Cantarell", 1, 17));
+			g.drawString("Press SPACE to play again!", this.getWidth()/2 - 100, 400);
 
 		}
 	}

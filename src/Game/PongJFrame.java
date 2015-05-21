@@ -83,8 +83,6 @@ public class PongJFrame extends JFrame implements ActionListener, KeyListener {
 			timer.stop();
 			timer3.start();
 			renderer.ball.reset(this.getWidth(), this.getHeight());
-//			System.out.println("timer: "+timer.wait(timer3, 1000););
-			System.out.println("contador: "+contador);
 			if (contador == 3) {
 				timer3.stop();
 				timer.start();
@@ -96,8 +94,6 @@ public class PongJFrame extends JFrame implements ActionListener, KeyListener {
 			timer.stop();
 			timer3.start();
 			renderer.ball.reset(this.getWidth(), this.getHeight());
-//			System.out.println("timer: "+timer.wait(timer3, 1000););
-			System.out.println("contador: "+contador);
 			if (contador == 3) {
 				timer3.stop();
 				timer.start();
@@ -117,8 +113,6 @@ public class PongJFrame extends JFrame implements ActionListener, KeyListener {
 		if (down) {
 			renderer.player2.mover(false, this.getHeight());
 		}
-		System.out.println("width: "+this.getWidth());
-		System.out.println("width: "+this.getHeight());
 		renderer.ball.update(renderer.player1, renderer.player2, this.getWidth(), this.getHeight());
 	}
 

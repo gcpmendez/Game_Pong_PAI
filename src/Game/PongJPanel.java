@@ -87,7 +87,6 @@ public class PongJPanel extends JPanel {
 
 		// PAUSED
 		if (gameStatus == 1) {
-			System.out.println("pausado");
 			g.setColor(Color.WHITE);
 			g.setFont(new Font("Cantarell", 1, 50));
 			if (player) {

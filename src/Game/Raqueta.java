@@ -46,7 +46,6 @@ public class Raqueta {
 	}
 
 	public void setScore(int score) {
-		System.out.println("score: "+score);
 		this.score = score;
 	}
 	

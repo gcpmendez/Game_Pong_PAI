@@ -99,7 +99,6 @@ public class Bola {
 	 * 
 	 */
 	public void update(Raqueta raqueta1, Raqueta raqueta2, int anchura, int altura) {
-		System.out.println("update");
 		int speed = 15;
 
 		this.x += movX * speed;
@@ -121,6 +120,8 @@ public class Bola {
 					movY = -1;
 				}
 			}
+			Sonido.playSound("Recursos/Sonidos/pared.wav");
+			sonido1.run();
 		}
 
 		if (checkCollision(raqueta1) == 1) {			// Si colisiona con raqueta
@@ -148,16 +149,12 @@ public class Bola {
 		}
 
 		if (checkCollision(raqueta1) == 2) {	// Si colisiona con los bordes izquierdo y derecho sumamos +1
-//			System.out.println("punto");
-			System.out.println("colisiona raqueta1");
 			raqueta2.setScore(raqueta2.getScore() + 1);
 			cambiaScore1 = true;
 			reset(anchura, altura);
 			Sonido.playSound("Recursos/Sonidos/point.wav");
 			sonido2.run();
 		} else if (checkCollision(raqueta2) == 2) {
-			System.out.println("colisiona raqueta2");
-//			System.out.println("punto2");
 			raqueta1.setScore(raqueta1.getScore()+1);
 			cambiaScore2 = true;
 			reset(anchura, altura);
@@ -206,11 +203,6 @@ public class Bola {
 			return 1; 	// rebotar con raqueta
 		} else if ((raqueta.getX() > this.x+10 && raqueta.getNumeroRaqueta() == 1) || 
 				(raqueta.getX() < x - width && raqueta.getNumeroRaqueta() == 2)) {
-			
-			System.out.println("raqueta.getX() > x && raqueta.getNumeroRaqueta(): " + raqueta.getX() +" > "+ x + " && "+
-			raqueta.getNumeroRaqueta());
-			System.out.println("raqueta.getX() < x - width && raqueta.getNumeroRaqueta() == 2)): " + raqueta.getX() +" < "+ (x - width)+ " && "+
-					raqueta.getNumeroRaqueta());
 			return 2; 	// Puntúa en los bordes izquierdo y derecho
 		}
 		return 0; 		// nada

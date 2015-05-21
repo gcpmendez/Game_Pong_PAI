@@ -1,4 +1,4 @@
-package Game;
+package es.ull.etsii.pai.Game;
 
 import java.io.*;
 import javax.sound.sampled.AudioSystem;

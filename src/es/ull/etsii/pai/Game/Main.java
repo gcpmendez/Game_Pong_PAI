@@ -1,4 +1,4 @@
-package Game;
+package es.ull.etsii.pai.Game;
 
 import javax.swing.JFrame;
 

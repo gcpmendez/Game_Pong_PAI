@@ -1,13 +1,14 @@
-package TestGame;
+package es.ull.etsii.pai.TestGame;
 
 
 import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.fail;
 
+
 import org.junit.Before;
 import org.junit.Test;
 
-import Game.Bola;
+import es.ull.etsii.pai.Game.Bola;
 
 /**
  * Progamacion de aplicaciones interactivas.

@@ -1,4 +1,4 @@
-package Game;
+package es.ull.etsii.pai.Game;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;

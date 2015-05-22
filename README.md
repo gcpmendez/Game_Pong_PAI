@@ -42,7 +42,7 @@ Cada **bug** que encuentre hazmelo saber a gcpmendez@gmail.com
 Para ejecutar el juego lo descargaremos <i class="icon-download"></i>, luego desde Eclipse lo importaremos desde el directorio donde lo hallamos extraido <i class="icon-folder"></i> y ejecutaremos el Main.js o desde linea de comandos y dentro del directorio /src del proyecto ejecutaremos los siguientes comandos:
 ```
 javac *.java
-java main.java
+java main
 ```
 
 ### Enlaces Externos

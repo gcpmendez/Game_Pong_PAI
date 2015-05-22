@@ -23,7 +23,7 @@ Y de una pantalla final donde se muestra el jugador ganador.
 ![Pantalla final](https://github.com/gcpmendez/Game_Pong_PAI/blob/master/PongGame2.JPG?raw=true "imagen3")
 
 > **Nota:**
-> El objetivo del juego es obtener 7 puntos. El primero que lleg
+> El objetivo del juego es obtener 7 puntos para lograr la victoria.
 
 
 

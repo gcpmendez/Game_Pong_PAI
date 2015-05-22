@@ -26,11 +26,11 @@ public class Raqueta {
 	public Raqueta(int anchura, int altura, int NumeroRaqueta) {
 		this.NumeroRaqueta = NumeroRaqueta;
 		if (NumeroRaqueta == 1) {					// Raqueta 1 
-			this.x = 10;		
+			this.x = 20;		
 			this.score=0;
 		}
 		if (NumeroRaqueta == 2) {					// Raqueta 2
-			this.x = anchura - this.width - 10;
+			this.x = anchura - this.width - 33;
 			this.score=0;
 		}
 		this.y = altura / 2 - this.height / 2;

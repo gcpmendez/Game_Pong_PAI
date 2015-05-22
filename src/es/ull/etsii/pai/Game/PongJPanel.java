@@ -128,6 +128,14 @@ public class PongJPanel extends JPanel {
 			g.drawString("PAI  PROJECT", -this.getHeight() + (this.getWidth() / 100), this.getWidth() / 2 + (this.getWidth() / 45));
 			g2d.setTransform(orig);
 
+			g.drawLine((this.getWidth() / 2) + (this.getWidth() / 40), this.getHeight() - this.getHeight()/ 3 - this.getHeight()/9, (this.getWidth() / 2) + (this.getWidth() / 40), this.getHeight() - (this.getWidth() / 100)); // Línea
+			// Linea debajo de pai
+			g.drawLine((this.getWidth() / 2) - (this.getWidth() / 40), this.getWidth() / 100, (this.getWidth() / 2) - (this.getWidth() / 40), this.getHeight()/ 3 + this.getHeight()/9); // Línea
+			// Linea debajo de pai
+			
+			g.drawLine((this.getWidth() / 2) - (this.getWidth() / 40), this.getHeight()/ 3 + this.getHeight()/9, (this.getWidth() / 2) + (this.getWidth() / 40), this.getHeight() - this.getHeight()/ 3 - this.getHeight()/9); // Línea
+			
+			
 			g2d.rotate(90);
 			g.drawString(String.valueOf(player1.getScore()), 100, 100);
 			g2d.rotate(-90);

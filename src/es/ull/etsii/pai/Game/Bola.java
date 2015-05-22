@@ -99,7 +99,7 @@ public class Bola {
 	 * 
 	 */
 	public void update(Raqueta raqueta1, Raqueta raqueta2, int anchura, int altura) {
-		int speed = 15;
+		int speed = 13;
 
 		this.x += movX * speed;
 		this.y += movY * speed;
